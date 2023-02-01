@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 class adapter(private var context: Context, private var listener:myinterface): RecyclerView.Adapter<adapter.myviewholder>() {
-    private var item = dataitem()
+    private var item = ArrayList<dataitemItem>()
 
     inner class myviewholder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val id : TextView = itemView.findViewById(R.id.id)
@@ -36,7 +36,7 @@ class adapter(private var context: Context, private var listener:myinterface): R
         return item.size
     }
     @SuppressLint("NotifyDataSetChanged")
-    fun updatelist(newlist:dataitem){
+    fun updatelist(newlist:ArrayList<dataitemItem>){
         item.clear()
         item.addAll(newlist)
         notifyDataSetChanged()
