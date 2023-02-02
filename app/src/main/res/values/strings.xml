@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Store</string>
+    <string name="enter_id">Enter Id</string>
+    <string name="update">update</string>
+    <string name="postdata">postdata</string>
+    <string name="deletedata">deletedata</string>
+    <string name="patchdata">patchdata</string>
+    <string name="patchdatas">patchdata</string>
+    <string name="getdata">getdata</string>
+    <string name="delete">delete</string>
+    <string name="patch">patch</string>
 </resources>

@@ -10,13 +10,28 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+
         android:supportsRtl="true"
         android:theme="@style/Theme.Store"
         tools:targetApi="31">
         <activity
+            android:windowSoftInputMode="adjustResize"
+            android:name=".delete_data"
+            android:exported="false" />
+        <activity
+            android:windowSoftInputMode="adjustResize"
+            android:name=".idactivity"
+            android:exported="false" />
+        <activity
+            android:windowSoftInputMode="adjustResize"
+            android:name=".transferactivity"
+            android:exported="false" />
+        <activity
+            android:windowSoftInputMode="adjustResize"
             android:name=".postactivity"
             android:exported="false" />
         <activity
+            android:windowSoftInputMode="adjustResize"
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@drawable/img_3"
         tools:context=".postactivity">
 
         <EditText
@@ -31,6 +31,8 @@
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
+
             android:layout_margin="15dp"
             android:background="@drawable/allbackground"
             android:hint="Enter description"
@@ -69,7 +71,7 @@
                 android:id="@+id/choosebutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="14dp"
+                android:layout_marginStart="11dp"
                 android:layout_marginTop="70dp"
                 android:gravity="center"
                 android:text="choose" />
@@ -77,13 +79,40 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/postbutton"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="50dp"
-            android:minHeight="48dp"
-            android:text="post" />
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/postbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:minHeight="48dp"
+                android:layout_marginTop="73dp"
+                android:text="post" />
+
+            <Button
+                android:id="@+id/updatebutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:minHeight="48dp"
+                android:layout_marginTop="73dp"
+                android:text="Update" />
+
+            <Button
+                android:id="@+id/patchbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="33dp"
+                android:minHeight="48dp"
+                android:layout_marginTop="73dp"
+                android:text="@string/patch" />
+
+        </LinearLayout>
 
 
     </LinearLayout>

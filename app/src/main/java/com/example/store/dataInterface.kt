@@ -8,7 +8,7 @@ interface dataInterface {
     fun getdata():Call<ArrayList<dataitemItem>>
 
     @GET("products/{id}")
-    fun idgetdata(@Path("id")id:Int):Call<ArrayList<dataitemItem>>
+    fun idgetdata(@Path("id")id:Int):Call<dataitemItem>
 
     @POST("products")
     fun postdata(@Body dataitemItem: dataitemItem):Call<ArrayList<dataitemItem>>
@@ -20,5 +20,5 @@ interface dataInterface {
     fun putdata(@Path("id")id:Int,@Body dataitemItem: dataitemItem):Call<ArrayList<dataitemItem>>
 
     @PATCH("products/{id}")
-    fun patchdata(@Path("id")id:Int,@Body dataitem: dataitem):Call<ArrayList<dataitemItem>>
+    fun patchdata(@Path("id")id:Int,@Body dataitemItem:dataitemItem):Call<ArrayList<dataitemItem>>
 }
